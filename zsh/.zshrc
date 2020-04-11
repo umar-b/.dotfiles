@@ -75,18 +75,20 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions z sudo vscode extract zsh-syntax-highlighting)
+plugins=(
+	git
+	archlinux
+	colored-man-pages
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	sudo
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
-export PATH="${PATH}:/home/umarb/Dokumente/processing"
-# export PATH="/home/umarb/anaconda3/bin:$PATH"  # commented out by conda initialize
-
-export TYPEWRITTEN_MULTILINE=true
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -97,10 +99,6 @@ export TYPEWRITTEN_MULTILINE=true
 # else
 #   export EDITOR='mvim'
 # fi
-
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-	        source /etc/profile.d/vte.sh
-fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -114,26 +112,12 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias v="nvim"
+alias rm='echo "This is not the command you are looking for."; false'
+alias reboot="sudo systemctl reboot"
+alias poweroff="sudo systemctl poweroff"
+alias halt="sudo systemctl halt"
+
+neofetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/umarb/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/umarb/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/umarb/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/umarb/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-conda deactivate
-neofetch
