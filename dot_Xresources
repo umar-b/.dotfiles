@@ -1,0 +1,91 @@
+Xcursor.theme: phinger-cursors
+Xcursor.size: 24
+
+!#define base00 #282c34
+!#define base01 #353b45
+!#define base02 #3e4451
+!#define base03 #545862
+!#define base04 #565c64
+!#define base05 #abb2bf
+!#define base06 #b6bdca
+!#define base07 #c8ccd4
+!#define base08 #e06c75
+!#define base09 #d19a66
+!#define base0A #e5c07b
+!#define base0B #98c379
+!#define base0C #56b6c2
+!#define base0D #61afef
+!#define base0E #c678dd
+!#define base0F #be5046
+
+!*foreground:   base07
+!*background:   #1e222a
+!*cursorColor:  base05
+
+!*color0:       base00
+!*color1:       base08
+!*color2:       base0B
+!*color3:       base0A
+!*color4:       base0D
+!*color5:       base0E
+!*color6:       base0C
+!*color7:       base05
+
+!*color8:       base03
+!*color9:       base08
+!*color10:      base0B
+!*color11:      base0A
+!*color12:      base0D
+!*color13:      base0E
+!*color14:      base0C
+!*color15:      base07
+
+!Tokyo Night theme
+! general
+*foreground: #a9b1d6
+*background: #1a1b26
+*cursorColor: #a9b1d6
+
+! terminal padding color
+*borderColor: #1a1b26
+
+! black
+*color0: #1a1b26
+*color8: #4e5173
+
+! red
+*color1: #F7768E
+*color9: #F7768E
+
+! green
+*color2: #9ECE6A
+*color10: #9ECE6A
+
+! yellow
+*color3: #E0AF68
+*color11: #E0AF68
+
+! blue
+*color4: #7AA2F7
+*color12: #7AA2F7
+
+! magenta
+*color5: #9a7ecc
+*color13: #9a7ecc
+
+! cyan
+*color6: #4abaaf
+*color14: #4abaaf
+
+! white
+*color7: #acb0d0
+*color15: #acb0d0
+! Tokyo Night theme ends
+
+! just remove this if you dont use my tabbed
+
+tabbed.selfgcolor:   #d6d8eb
+tabbed.selbgcolor:   #1e222a
+
+tabbed.normfgcolor:  #9294a8
+tabbed.normbgcolor:  #282c34
