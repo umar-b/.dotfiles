@@ -99,6 +99,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='nvim'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -116,6 +118,7 @@ alias lst="exa --tree --level=2"
 alias lstl="exa --tree --level=2 --long"
 alias lsg="exa --long --git"
 alias reload="exec zsh"
+alias code="codium"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
